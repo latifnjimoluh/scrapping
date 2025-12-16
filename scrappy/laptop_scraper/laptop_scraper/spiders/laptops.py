@@ -13,6 +13,7 @@ class LaptopsSpider(scrapy.Spider):
 
     def parse(self, response):
 
+        
         print(f"\n📄 Chargement de la page {self.page_number}...")
 
         products = response.css(".thumbnail")
